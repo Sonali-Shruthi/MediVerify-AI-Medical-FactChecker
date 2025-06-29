@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Verification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Medical Claim Verification</h1>
+       
+        <form action="/" method="POST" onsubmit="showLoading()">
+            <textarea name="claim" placeholder="Enter your medical claim here..." required></textarea>
+            <button type="submit" id="submit-btn">Verify</button>
+            <div id="loading" style="display: none;">Verifying<span class="dots">...</span></div>
+        </form>
+        
+
+        {% if request.form['claim'] %}
+        <div class="user-input">
+            <h3>Your Claim:</h3>
+            <p>{{ request.form['claim'] }}</p>
+        </div>
+        {% endif %}
+
+        {% if result %}
+        <div class="result">
+            <h2>Verdict: {{ result.verdict }}</h2>
+            <p>Confidence Score: {{ result.score }}%</p>
+            <h3>Related Articles:</h3>
+            <ul>
+                {% for article in result.articles %}
+                    <li>
+                        <a href="{{ article.link }}" target="_blank">{{ article.title }}</a>
+                        <p>{{ article.summary }}</p>
+                        <small>Similarity Score: {{ article.similarity | round(2) }}</small>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+    <script>
+        function showLoading() {
+            document.getElementById("submit-btn").style.display = "none";  // Hide button
+            document.getElementById("loading").style.display = "block";  // Show loading animation
+        }
+        </script>
+        
+</body>
+</html>
