@@ -6,7 +6,7 @@ This project was developed as part of a research initiative to enhance **trust a
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 MediVerify performs **end-to-end claim verification** by analyzing a medical statement and evaluating its truthfulness using published biomedical literature.  
 
@@ -14,7 +14,7 @@ It combines **claim understanding**, **evidence retrieval**, **document ranking*
 
 ---
 
-## 🧠 Key Features
+##  Key Features
 
 - **Intelligent Claim Verification:** Detects and validates medical claims using contextual embeddings and similarity scoring.  
 - **Evidence Retrieval from Trusted Sources:** Pulls supporting and refuting literature from PubMed, WHO, and ClinicalTrials APIs.  
@@ -25,7 +25,7 @@ It combines **claim understanding**, **evidence retrieval**, **document ranking*
 
 ---
 
-## 🧩 System Architecture
+## System Architecture
 
 **Claim Input**  
 ⬇️  
@@ -46,7 +46,7 @@ It combines **claim understanding**, **evidence retrieval**, **document ranking*
 
 ---
 
-## 🧪 Core Components
+##  Core Components
 
 - **Claim Preprocessor** : Cleans, tokenizes, and extracts key medical entities using spaCy. 
 - **Retriever** : Fetches biomedical literature using PubMed, WHO, and ClinicalTrials APIs. 
@@ -58,7 +58,7 @@ It combines **claim understanding**, **evidence retrieval**, **document ranking*
 
 ---
 
-## 💡 Future Enhancements
+##  Future Enhancements
 
 - Integration with **LLMs** (e.g., GPT-based models) for enhanced reasoning.  
 - Expansion of **multilingual database coverage**.  
