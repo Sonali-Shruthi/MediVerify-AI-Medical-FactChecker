@@ -39,7 +39,7 @@ It combines **claim understanding**, **evidence retrieval**, **document ranking*
 ⬇️  
 **Summarization (BART)**  
 ⬇️  
-**Multilingual Translation**
+**Multilingual Translation**  
 ⬇️  
 **Evidence Report Generation**
 
