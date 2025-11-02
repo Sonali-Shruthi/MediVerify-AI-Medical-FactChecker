@@ -27,31 +27,32 @@ It combines **claim understanding**, **evidence retrieval**, **document ranking*
 
 ## 🧩 System Architecture
 
-Claim Input 
-   ↓
-Preprocessing (spaCy)
-   ↓
-Semantic Encoding (BioBERT)
-   ↓
-Evidence Retrieval (PubMed/WHO/ClinicalTrials)
-   ↓
-Claim Classification (BERT) and Confidence Score Calculation
-   ↓
-Summarization (BART)
-   ↓
-Multilingual Translation
+**Claim Input**  
+⬇️  
+**Preprocessing (spaCy)**  
+⬇️  
+**Semantic Encoding (BioBERT)**  
+⬇️  
+**Evidence Retrieval (PubMed / WHO / ClinicalTrials)**  
+⬇️  
+**Claim Classification (BERT) and Confidence Score Calculation**  
+⬇️  
+**Summarization (BART)**  
+⬇️  
+**Multilingual Translation**
+
 
 ---
 
 ## 🧪 Core Components
 
-**Claim Preprocessor** : Cleans, tokenizes, and extracts key medical entities using spaCy. 
-**Retriever** : Fetches biomedical literature using PubMed, WHO, and ClinicalTrials APIs. 
-**Encoder** : Converts text into semantic embeddings using BioBERT for contextual matching. 
-**Classifier** : Determines claim status — *Supported*, *Refuted*, or *Inconclusive* — using fine-tuned BERT. 
-**Summarizer** : Generates concise, human-readable summaries of evidence using BART. 
-**Translator** : Provides multilingual translation of both claims and summaries. 
-**Report Generator** : Produces structured, explainable verification reports. 
+- **Claim Preprocessor** : Cleans, tokenizes, and extracts key medical entities using spaCy. 
+- **Retriever** : Fetches biomedical literature using PubMed, WHO, and ClinicalTrials APIs. 
+- **Encoder** : Converts text into semantic embeddings using BioBERT for contextual matching. 
+- **Classifier** : Determines claim status — *Supported*, *Refuted*, or *Inconclusive* — using fine-tuned BERT. 
+- **Summarizer** : Generates concise, human-readable summaries of evidence using BART. 
+- **Translator** : Provides multilingual translation of both claims and summaries. 
+- **Report Generator** : Produces structured, explainable verification reports. 
 
 ---
 
