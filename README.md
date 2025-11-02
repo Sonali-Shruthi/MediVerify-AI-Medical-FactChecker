@@ -40,6 +40,8 @@ It combines **claim understanding**, **evidence retrieval**, **document ranking*
 **Summarization (BART)**  
 ⬇️  
 **Multilingual Translation**
+⬇️  
+**Evidence Report Generation**
 
 
 ---
@@ -63,5 +65,3 @@ It combines **claim understanding**, **evidence retrieval**, **document ranking*
 - Browser extension for **real-time fact-checking** of medical tweets, posts, and articles.  
 
 
-   ↓
-Evidence Report Generation
